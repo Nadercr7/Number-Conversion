@@ -132,7 +132,7 @@ class MainApplication:
         self.master = master
         self.master.title("Number system converter")
         self.master.geometry("600x200")
-        self.master.resizable(False, False)
+        self.master.resizable(True, False)
 
         self.label_title, self.label_equals = self.create_text()
         self.stringvar_number1, self.entry_number1, self.stringvar_number2, self.entry_number2 = self.create_number_input()
@@ -163,7 +163,7 @@ class MainApplication:
         stringvar_number2.trace("w", lambda x, y, z: self.convert(1))
 
         entry_number2 = tk.Entry(self.master, textvariable=stringvar_number2, font=(
-            "Calibri", 16), borderwidth=0, bg="lightblue",)
+            "Calibri", 16), borderwidth=0, bg="lightgreen",)
         entry_number2.place(x=325, y=65, width=225, height=30)
 
         return stringvar_number1, entry_number1, stringvar_number2, entry_number2
