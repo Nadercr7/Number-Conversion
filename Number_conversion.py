@@ -139,8 +139,8 @@ class MainApplication:
         self.combobox_base1, self.combobox_base2 = self.create_base_selection()
 
     def create_text(self):
-        label_title = tk.Label(self.master, text="NUMBER SYSTEM CONVERTER", font=(
-            "Calibri", 20, "bold"), anchor=tk.CENTER,)
+        label_title = tk.Label(self.master, text="NUMBER SYSTEM CONVERTER By LOGS", font=(
+            "Calibri", 18, "bold"), anchor=tk.CENTER,)
         label_title.place(x=100, y=0, width=400, height=50)
 
         label_equals = tk.Label(self.master, text="=", font=(
